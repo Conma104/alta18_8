@@ -12,6 +12,8 @@ $_Route['admin/users/forgotpass'] = 'Admin\users\ForgotpassController@index';
 
 $_Route['admin/users/selectnewpass'] = 'Admin\users\Selectnewpass@index';
 
+$_Route['admin/users/personalpage'] = 'Admin\users\Personal@index';
+
 
 
 
