@@ -18,7 +18,7 @@ function makeSafe($data) {
   }
 }
 
-if (!function_exists('back')) {
+if(!function_exists('back')) {
 
     function back(){
         if (isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])) {
@@ -27,6 +27,15 @@ if (!function_exists('back')) {
         }
 
         return header('location: /');
+    }
+}
+
+
+if(!function_exists('redirect')) {
+
+    function redirect($url = '/'){
+
+        return header('location: '.$url);
     }
 }
 
